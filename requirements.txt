@@ -1,3 +1,3 @@
 fastapi
-uvicron
+uvicorn
 Pyt2s

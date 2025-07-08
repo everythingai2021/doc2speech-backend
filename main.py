@@ -11,12 +11,16 @@ import tempfile
 
 app = FastAPI()
 
+origins = [
+    "https://pdf2tts-front.vercel.app",  #
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://pdf2tts.onrender.com"],  
+    allow_origins=origins,  
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["*"],  
+    allow_headers=["*"],  
 )
 
 @app.get("/")

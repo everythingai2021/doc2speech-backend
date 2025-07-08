@@ -2,3 +2,4 @@ fastapi
 uvicorn
 Pyt2s
 PyPDF2
+python-multipart

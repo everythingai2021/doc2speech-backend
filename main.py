@@ -13,7 +13,7 @@ import tempfile
 app = FastAPI()
 
 origins = [
-    "https://doc2speech.vercel.app/",
+    "https://doc2speech.vercel.app",
 ]
 
 app.add_middleware(

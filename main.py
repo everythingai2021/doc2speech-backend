@@ -13,7 +13,7 @@ import tempfile
 app = FastAPI()
 
 origins = [
-    "https://pdf2tts-front.vercel.app",
+    "https://doc2speech.vercel.app/",
 ]
 
 app.add_middleware(
@@ -134,4 +134,9 @@ def extract_text(pdf_path):
             else:
                 text += "[No text found on this page]\n"
     return text
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
 
